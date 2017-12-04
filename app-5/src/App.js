@@ -2,7 +2,18 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Image from './Image';
+
 class App extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+
+    }
+  }
+
+
   render() {
     return (
       <div className="App">
@@ -10,9 +21,8 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Image img={'https://vignette.wikia.nocookie.net/vsbattles/images/a/ac/Tree.png/revision/latest?cb=20170515233039'} />
+
       </div>
     );
   }
